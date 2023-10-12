@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Form</title>
+    <style>
+      .one{
+        background-color: lawngreen;
+      }
+
+      .two{
+        font-family: fantasy;
+        font-size: large;
+        font-style: italic;
+      }
+
+      .three{
+         font-family: cursive;
+         font-size: medium;
+         font-style: oblique;
+      }
+
+        #submit:hover{
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset  class="one" >
+        <legend class="two">Personal Details</legend>
+        <br> <br>
+        
+        <label class="three" for="fname"> First Name</label>
+        &nbsp &nbsp &nbsp <input type="text" id="fname" name="fname1" >
+
+        <br> <br>
+
+        <label class="three" for="mname"> Middle Name</label>
+        &nbsp <input type="text" id="mname" mname="mname1" >
+
+        <br> <br>
+
+        <label class="three" for="lname"> Last Name</label>
+        &nbsp &nbsp &nbsp  <input type="text" id="lname" lname="lname1" >
+
+        <br> <br>
+
+        <label class="three" for="email"> Email</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="email" id="email" email="email" >
+
+        <br> <br>
+
+        <label class="three" for="dob"> DOB</label>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="date" id="dob" dob="dob1" >
+
+    </fieldset>
+
+    <br> <br> <br>
+
+    <fieldset class="one">
+        <legend class="two">Educational Details</legend>
+        <br> <br>
+
+        <label for=""> Department Name</label>
+        <br> <br> 
+
+           <input type="radio" id="ECE" name="dept"> 
+            <label for="ECE">ECE</label>
+
+            <input type="radio" id="EEE" name="dept"> 
+            <label for="EEE">EEE</label>
+
+            <input type="radio" id="Civil" name="dept"> 
+            <label for="Civil">Civil</label>
+        
+        
+
+        <br> <br>
+
+       
+        <br> <br>
+
+        <label for="yop"> YOP</label>
+        <input list="yop1" id="yop" name="yop">
+        <datalist id="yop1">
+               <option>2018</option>
+               <option>2019</option>
+               <option>2020</option>
+               <option>2021</option>
+               <option>2022</option>
+               <option>2023</option>
+        </datalist>
+
+        <br> <br>
+
+
+        <legend>Skills</legend>
+        <br> 
+        <label for=""> Your Skills</label>
+        <br> <br> 
+
+           <input type="checkbox" id="Java" skill="java"> 
+            <label for="Java">Java</label>
+
+            <input type="checkbox" id="SQL" skill="sql"> 
+            <label for="SQL">SQL</label>
+
+            <input type="checkbox" id="HTML" skill="html"> 
+            <label for="HTML">HTML</label>
+        
+
+
+    </fieldset>
+    <br> <br>
+
+    <input type="Submit" id="submit">
+    </form>
+</body>
+</html>
